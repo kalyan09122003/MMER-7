@@ -20,7 +20,7 @@ app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB max file size
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
 # Emotion detection models
-emotion_detector = FER(mtcnn=True)
+emotion_detector = FER()
 
 # Emotion keywords mapping - using 'joy' instead of 'happy' to match frontend expectations
 EMOTION_KEYWORDS = {
