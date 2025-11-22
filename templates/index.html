@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmotiAI - Multimodal Emotion Recognition</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="{{ url_for('static', filename='logo.png') }}" alt="EmotiAI Logo" style="width: 32px; height: 32px; border-radius: 8px; object-fit: contain; vertical-align: middle;"></div>
+                <div>
+                    <div>EmotiAI</div>
+                    <div style="font-size: 0.7rem; color: #666666; font-weight: normal;">Emotion Recognition System</div>
+                </div>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span class="menu-icon">☰</span>
+            </button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/" class="active">Home</a></li>
+                    <li><a href="/text">Text Analysis</a></li>
+                    <li><a href="/audio">Audio Analysis</a></li>
+                    <li><a href="/image">Image Analysis</a></li>
+                    <li><a href="/video">Video Analysis</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-icon">
+                <img src="{{ url_for('static', filename='logo.png') }}" alt="EmotiAI Logo" class="hero-logo">
+            </div>
+            <h1>EmotiAI</h1>
+            <p>A multimodal emotion detection platform that integrates NLP, speech analysis, facial expression recognition, and video processing to deliver accurate emotion insights.</p>
+            
+            <div class="hero-features">
+                <div class="feature-badge">
+                    <span>⚡</span>
+                    Real-time Processing
+                </div>
+                <div class="feature-badge">
+                    <span>🎯</span>
+                    80.2% Accuracy
+                </div>
+                <div class="feature-badge">
+                    <span>💬</span>
+                    Multi-Modal Analysis
+                </div>
+            </div>
+        </section>
+
+        <!-- Analysis Options Grid -->
+        <section class="analysis-grid">
+            <div class="glass-card analysis-card">
+                <div class="analysis-icon">💬</div>
+                <h3>Text Analysis</h3>
+                <p>Analyze emotions in written content using advanced natural language processing algorithms.</p>
+                <a href="/text" class="explore-btn">
+                    Explore <span>→</span>
+                </a>
+            </div>
+
+            <div class="glass-card analysis-card">
+                <div class="analysis-icon">🎵</div>
+                <h3>Audio Analysis</h3>
+                <p>Detect emotions from voice patterns, tone, and speech characteristics in real-time.</p>
+                <a href="/audio" class="explore-btn">
+                    Explore <span>→</span>
+                </a>
+            </div>
+
+            <div class="glass-card analysis-card">
+                <div class="analysis-icon">📷</div>
+                <h3>Image Analysis</h3>
+                <p>Identify facial expressions and emotional states from uploaded images with precision.</p>
+                <a href="/image" class="explore-btn">
+                    Explore <span>→</span>
+                </a>
+            </div>
+
+            <div class="glass-card analysis-card">
+                <div class="analysis-icon">📹</div>
+                <h3>Video Analysis</h3>
+                <p>Real-time emotion recognition from live video streams with facial recognition technology.</p>
+                <a href="/video" class="explore-btn">
+                    Explore <span>→</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Why Choose EmotiAI Section -->
+        <section style="margin-top: 4rem;">
+            <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2.5rem;">Why Choose EmotiAI?</h2>
+            
+            <div class="analysis-grid">
+                <div class="glass-card">
+                    <div class="analysis-icon">⚡</div>
+                    <h3>Real-Time Processing</h3>
+                    <p>Get instant emotion analysis results with millisecond latency for seamless user experience.</p>
+                </div>
+
+                <div class="glass-card">
+                    <div class="analysis-icon">✨</div>
+                    <h3>Multi-Modal Support</h3>
+                    <p>Analyze emotions across text, audio, image, and video formats with unified accuracy.</p>
+                </div>
+
+                <div class="glass-card">
+                    <div class="analysis-icon">💬</div>
+                    <h3>High Accuracy</h3>
+                    <p>State-of-the-art models with 99.2% accuracy in emotion recognition across all modalities.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>EmotiAI System</h3>
+                <p>Advanced multimodal emotion recognition powered by deep learning. 
+                   Analyzing text, audio, image, and video with precision.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="/text">Text Analysis</a></li>
+                    <li><a href="/image">Image Analysis</a></li>
+                    <li><a href="/audio">Audio Analysis</a></li>
+                    <li><a href="/video">Video Analysis</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="https://github.com/kalyan09122003/MMER-7" class="social-icon-pro" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+
+                    <a href="https://www.linkedin.com/school/siddartha-institute-of-science-technology-puttur/posts/?feedView=all" class="social-icon-pro" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="https://www.linkedin.com/school/siddartha-institute-of-science-technology-puttur/posts/?feedView=all"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+
+                    <a href="mailto:contact@emotiai.com" class="social-icon-pro" aria-label="Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2024 EmotiAI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
